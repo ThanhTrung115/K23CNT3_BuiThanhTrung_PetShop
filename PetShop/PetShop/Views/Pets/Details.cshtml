@@ -1,0 +1,37 @@
+﻿@model PetShop.Models.Pet
+@{
+    ViewData["Title"] = Model.PetName;
+}
+
+<h1>Chi tiết: @Model.PetName</h1>
+
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-md-5">
+            <img src="https://picsum.photos/seed/@Model.PetId/600/500" class="img-fluid rounded" alt="@Model.PetName">
+        </div>
+        <div class="col-md-7">
+            <dl class="row">
+                <dt class="col-sm-4">Loài:</dt>
+                <dd class="col-sm-8">@Model.Category?.CategoryName</dd>
+
+                <dt class="col-sm-4">Mô tả:</dt>
+                <dd class="col-sm-8">@Model.Description</dd>
+
+                <dt class="col-sm-4">Tuổi:</dt>
+                <dd class="col-sm-8">@(Model.Age) tháng</dd>
+
+                <dt class="col-sm-4">Giới tính:</dt>
+                <dd class="col-sm-8">@Model.Gender</dd>
+
+                <dt class="col-sm-4">Giá:</dt>
+                <dd class="col-sm-8 h4 text-danger">@Model.Price.ToString("N0") VNĐ</dd>
+            </dl>
+            <a href="#" class="btn btn-success btn-lg">Thêm vào giỏ</a>
+        </div>
+    </div>
+</div>
+<div class="mt-4">
+    <a asp-action="Index" class="btn btn-outline-secondary">Quay lại danh sách</a>
+</div>
