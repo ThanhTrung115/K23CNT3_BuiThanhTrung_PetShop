@@ -28,12 +28,32 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Carts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Orders/OrderSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE9yZGVyU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Pets/Details.cshtml]
@@ -46,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/hoc tap/K23CNT3_BuiThanhTrung_PetShop/PetShop/PetShop/Views/Shared/_ValidationScriptsPartial.cshtml]

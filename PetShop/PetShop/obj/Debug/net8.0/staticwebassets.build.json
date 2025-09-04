@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GJL6aSeyMq78lPMKwXIIV0GqUw/5SmGxAAIw9GihGDE=",
+  "Hash": "jiq1L3rBFeqYn1+QGl2vk+gO0r2O/Y0+SPhE5IZMgEE=",
   "Source": "PetShop",
   "BasePath": "_content/PetShop",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a88b67wxdp",
-      "Integrity": "ln9aKSrXBGzGIah/4q7bwgKw6Xm5yaFQJserllgEOW0=",
+      "Fingerprint": "y2cjvidiwx",
+      "Integrity": "6howYFdO5Gs/8NifDZPCiE8ijFKbCn5cuwVw1RhspCI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1321,51 +1321,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.a88b67wxdp.css",
-      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3510"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ln9aKSrXBGzGIah/4q7bwgKw6Xm5yaFQJserllgEOW0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 08:35:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "a88b67wxdp"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ln9aKSrXBGzGIah/4q7bwgKw6Xm5yaFQJserllgEOW0="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1376,7 +1331,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3510"
+          "Value": "3848"
         },
         {
           "Name": "Content-Type",
@@ -1384,11 +1339,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ln9aKSrXBGzGIah/4q7bwgKw6Xm5yaFQJserllgEOW0=\""
+          "Value": "\"6howYFdO5Gs/8NifDZPCiE8ijFKbCn5cuwVw1RhspCI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 08:35:57 GMT"
+          "Value": "Wed, 03 Sep 2025 19:38:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1398,7 +1353,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ln9aKSrXBGzGIah/4q7bwgKw6Xm5yaFQJserllgEOW0="
+          "Value": "sha256-6howYFdO5Gs/8NifDZPCiE8ijFKbCn5cuwVw1RhspCI="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.y2cjvidiwx.css",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6howYFdO5Gs/8NifDZPCiE8ijFKbCn5cuwVw1RhspCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Sep 2025 19:38:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2cjvidiwx"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6howYFdO5Gs/8NifDZPCiE8ijFKbCn5cuwVw1RhspCI="
         }
       ]
     },

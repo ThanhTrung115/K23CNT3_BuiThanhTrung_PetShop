@@ -1,0 +1,29 @@
+﻿@model IEnumerable<PetShop.Models.Order>
+
+@{
+    ViewData["Title"] = "Lịch sử đơn hàng";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ngày đặt</th>
+            <th>Tổng tiền</th>
+            <th>Địa chỉ giao</th>
+            <th>Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.OrderDate.ToString("dd/MM/yyyy")</td>
+                <td>@item.TotalAmount.ToString("N0") VNĐ</td>
+                <td>@item.ShippingAddress</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

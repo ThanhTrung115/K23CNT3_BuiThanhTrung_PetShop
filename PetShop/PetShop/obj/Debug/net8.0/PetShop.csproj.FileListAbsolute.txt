@@ -261,3 +261,5 @@ D:\hoc tap\K23CNT3_BuiThanhTrung_PetShop\PetShop\PetShop\bin\Debug\net8.0\runtim
 D:\hoc tap\K23CNT3_BuiThanhTrung_PetShop\PetShop\PetShop\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\hoc tap\K23CNT3_BuiThanhTrung_PetShop\PetShop\PetShop\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\hoc tap\K23CNT3_BuiThanhTrung_PetShop\PetShop\PetShop\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\hoc tap\K23CNT3_BuiThanhTrung_PetShop\PetShop\PetShop\obj\Debug\net8.0\PetShop.sourcelink.json
+D:\hoc tap\K23CNT3_BuiThanhTrung_PetShop\PetShop\PetShop\bin\Debug\net8.0\BCrypt.Net-Next.dll

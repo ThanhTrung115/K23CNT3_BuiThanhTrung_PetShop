@@ -1,0 +1,77 @@
+﻿@model List<PetShop.ViewModels.CartItemViewModel>
+@{
+    ViewData["Title"] = "Giỏ hàng của bạn";
+}
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+    </div>
+
+    @if (Model.Count > 0)
+    {
+        <div class="row">
+            <div class="col-lg-8">
+                @foreach (var item in Model)
+                {
+                    <div class="card mb-3 cart-item">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <img src="https://placehold.co/300x300" class="img-fluid rounded-start" alt="@item.PetName">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.PetName</h5>
+                                    <p class="card-text">
+                                        <strong>Giá:</strong>
+                                        <span class="text-danger">@item.Price.ToString("N0") VNĐ</span>
+                                    </p>
+                                    <p class="card-text">
+                                        <strong>Số lượng:</strong> @item.Quantity
+                                    </p>
+                                    <p class="card-text">
+                                        <strong>Thành tiền:</strong>
+                                        <span class="text-danger fw-bold">@item.Total.ToString("N0") VNĐ</span>
+                                    </p>
+                                    <a href="#" class="btn btn-outline-danger btn-sm">Xóa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm order-summary">
+                    <div class="card-body">
+                        <h4 class="card-title">Tóm tắt đơn hàng</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Tạm tính</span>
+                                <strong>@Model.Sum(i => i.Total).ToString("N0") VNĐ</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Phí vận chuyển</span>
+                                <strong>Miễn phí</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between h5">
+                                <span>Tổng cộng</span>
+                                <strong class="text-danger">@Model.Sum(i => i.Total).ToString("N0") VNĐ</strong>
+                            </li>
+                        </ul>
+                        <div class="d-grid mt-3">
+                            <a asp-controller="Orders" asp-action="Create" class="btn btn-primary btn-lg">Tiến hành đặt hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="text-center">
+            <p class="alert alert-info">Giỏ hàng của bạn đang trống.</p>
+            <a asp-controller="Pets" asp-action="Index" class="btn btn-primary">Tiếp tục mua sắm</a>
+        </div>
+    }
+</div>

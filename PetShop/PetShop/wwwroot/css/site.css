@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .hero-section {
     position: relative;
     height: 60vh;
-    background-image: url('https://i.ibb.co/L5rK14q/corgi.jpg');
+    background-image: url('https://placehold.co/1920x800/FFD369/393E46?text=PetShop');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -161,3 +161,19 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* --- TRANG GIỎ HÀNG --- */
+.cart-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.order-summary {
+    position: sticky; /* Giữ cho box này đứng yên khi cuộn trang */
+    top: 20px;
+}
+
+    .order-summary .card-title {
+        color: var(--primary-color);
+    }
