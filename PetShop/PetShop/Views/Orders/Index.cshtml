@@ -1,29 +1,42 @@
 ﻿@model IEnumerable<PetShop.Models.Order>
-
 @{
     ViewData["Title"] = "Lịch sử đơn hàng";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+    </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Ngày đặt</th>
-            <th>Tổng tiền</th>
-            <th>Địa chỉ giao</th>
-            <th>Trạng thái</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.OrderDate.ToString("dd/MM/yyyy")</td>
-                <td>@item.TotalAmount.ToString("N0") VNĐ</td>
-                <td>@item.ShippingAddress</td>
-                <td>@item.Status</td>
-            </tr>
-        }
-    </tbody>
-</table>
+    @if (Model.Any())
+    {
+        <table class="table table-hover table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th>Ngày đặt</th>
+                    <th>Tổng tiền</th>
+                    <th>Địa chỉ giao hàng</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td class="text-danger fw-bold">@item.TotalAmount.ToString("N0") VNĐ</td>
+                        <td>@item.ShippingAddress</td>
+                        <td>@item.Status</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="text-center">
+            <p class="alert alert-info">Bạn chưa có đơn hàng nào.</p>
+            <a asp-controller="Pets" asp-action="Index" class="btn btn-primary">Bắt đầu mua sắm</a>
+        </div>
+    }
+</div>

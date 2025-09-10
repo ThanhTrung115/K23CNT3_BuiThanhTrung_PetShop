@@ -1,0 +1,121 @@
+﻿:root {
+    --admin-bg: #f8f9fa;
+    --sidebar-bg: #2c3e50;
+    --sidebar-text: #ecf0f1;
+    --sidebar-hover-bg: #34495e;
+    --sidebar-active-bg: #2980b9;
+    --card-border: #e9ecef;
+}
+
+body {
+    background-color: var(--admin-bg);
+    font-family: 'Lato', sans-serif;
+}
+
+.admin-wrapper {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+/* --- Sidebar Menu --- */
+.admin-sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background: #1a252f;
+}
+
+    .sidebar-header h3 {
+        color: white;
+        margin: 0;
+    }
+
+.admin-sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #475a6a;
+}
+
+.admin-sidebar ul li a {
+    padding: 15px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+    .admin-sidebar ul li a:hover {
+        background: var(--sidebar-hover-bg);
+    }
+
+    .admin-sidebar ul li a.active {
+        background: var(--sidebar-active-bg);
+    }
+
+    .admin-sidebar ul li a i {
+        margin-right: 10px;
+    }
+
+.back-to-site {
+    padding: 20px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+    .back-to-site a {
+        color: var(--sidebar-text);
+        text-decoration: none;
+    }
+
+        .back-to-site a:hover {
+            color: white;
+        }
+
+
+/* --- Main Content --- */
+.admin-content {
+    width: 100%;
+    padding: 20px;
+}
+
+/* --- Thẻ thống kê Dashboard --- */
+.stat-card {
+    background-color: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+.stat-card-icon {
+    font-size: 3rem;
+    opacity: 0.3;
+    margin-right: 20px;
+}
+
+.stat-card-info h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.stat-card-info .stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #343a40;
+}

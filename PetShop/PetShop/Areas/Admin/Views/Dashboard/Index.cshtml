@@ -1,0 +1,49 @@
+﻿@model PetShop.ViewModels.AdminDashboardViewModel
+@{
+    ViewData["Title"] = "Bảng điều khiển";
+}
+
+<div class="row">
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a asp-area="Admin" asp-controller="Pets" asp-action="Index" class="text-decoration-none">
+            <div class="stat-card">
+                <i class="fas fa-paw stat-card-icon text-primary"></i>
+                <div class="stat-card-info">
+                    <h5>Thú cưng</h5>
+                    <span class="stat-number">@Model.PetCount</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a asp-area="Admin" asp-controller="Orders" asp-action="Index" class="text-decoration-none">
+            <div class="stat-card">
+                <i class="fas fa-file-invoice stat-card-icon text-warning"></i>
+                <div class="stat-card-info">
+                    <h5>Đơn hàng</h5>
+                    <span class="stat-number">@Model.OrderCount</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a asp-area="Admin" asp-controller="Users" asp-action="Index" class="text-decoration-none">
+            <div class="stat-card">
+                <i class="fas fa-users stat-card-icon text-success"></i>
+                <div class="stat-card-info">
+                    <h5>Người dùng</h5>
+                    <span class="stat-number">@Model.UserCount</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="stat-card">
+            <i class="fas fa-dollar-sign stat-card-icon text-danger"></i>
+            <div class="stat-card-info">
+                <h5>Doanh thu</h5>
+                <span class="stat-number">@Model.TotalRevenue.ToString("N0")</span>
+            </div>
+        </div>
+    </div>
+</div>

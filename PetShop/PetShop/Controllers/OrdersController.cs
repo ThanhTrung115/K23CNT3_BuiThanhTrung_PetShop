@@ -30,7 +30,6 @@ public class OrdersController : Controller
         return View(orders);
     }
 
-    // GET: /Orders/Create
     public IActionResult Create()
     {
         var session = HttpContext.Session;
@@ -45,21 +44,19 @@ public class OrdersController : Controller
         var userId = HttpContext.Session.GetInt32("UserId");
         if (!userId.HasValue)
         {
-            // Nếu chưa đăng nhập, chuyển đến trang đăng nhập
             return RedirectToAction("Login", "Account");
         }
+
+        var user = _context.Users.Find(userId.Value);
 
         var order = new Order
         {
             UserId = userId.Value,
             OrderDate = DateTime.Now,
             TotalAmount = cart.Sum(item => item.Total),
-            Status = "Đang xử lý"
+            Status = "Đang xử lý",
+            ShippingAddress = user.Address ?? "Chưa có địa chỉ"
         };
-
-        // Mặc định lấy địa chỉ của người dùng, hoặc hiển thị form cho người dùng nhập
-        var user = _context.Users.Find(userId.Value);
-        order.ShippingAddress = user.Address ?? "Chưa có địa chỉ";
 
         _context.Orders.Add(order);
         _context.SaveChanges();
@@ -77,12 +74,11 @@ public class OrdersController : Controller
         }
 
         _context.SaveChanges();
-        session.Remove(CARTKEY); // Xóa giỏ hàng sau khi đặt hàng
+        session.Remove(CARTKEY);
 
         return View("OrderSuccess");
     }
 
-    // Action để hiển thị trang đặt hàng thành công
     public IActionResult OrderSuccess()
     {
         return View();

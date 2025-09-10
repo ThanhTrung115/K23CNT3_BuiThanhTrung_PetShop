@@ -11,5 +11,8 @@ namespace PetShop.ViewModels
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        [Display(Name = "Ghi nhớ tôi?")]
+        public bool RememberMe { get; set; }
     }
 }

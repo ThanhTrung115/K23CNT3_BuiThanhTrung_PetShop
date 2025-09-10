@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PetShop.Models.Pet>
+
+@{
+    ViewData["Title"] = "Quản lý Thú cưng";
+}
+
+<h1 class="mt-4">@ViewData["Title"]</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Dashboard</a></li>
+    <li class="breadcrumb-item active">Danh sách</li>
+</ol>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus-circle me-1"></i> Thêm mới</a>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Tên thú cưng</th>
+                    <th>Danh mục</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.PetName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
+                        <td>@item.Price.ToString("N0") VNĐ</td>
+                        <td>@Html.DisplayFor(modelItem => item.Stock)</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.PetId" class="btn btn-warning btn-sm">Sửa</a>
+                            <a asp-action="Details" asp-route-id="@item.PetId" class="btn btn-info btn-sm">Chi tiết</a>
+                            <a asp-action="Delete" asp-route-id="@item.PetId" class="btn btn-danger btn-sm">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
