@@ -1,0 +1,40 @@
+﻿@model PetShop.Models.Pet
+
+@{
+    ViewData["Title"] = "Chi tiết";
+}
+
+<h1 class="mt-4">@ViewData["Title"]</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Dashboard</a></li>
+    <li class="breadcrumb-item"><a asp-action="Index">Quản lý Thú cưng</a></li>
+    <li class="breadcrumb-item active">Chi tiết</li>
+</ol>
+
+<div class="card">
+    <div class="card-header">
+        Thông tin của: @Model.PetName
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Tên thú cưng</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.PetName)</dd>
+
+            <dt class="col-sm-3">Danh mục</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Category.CategoryName)</dd>
+
+            <dt class="col-sm-3">Giá</dt>
+            <dd class="col-sm-9">@Model.Price.ToString("N0") VNĐ</dd>
+
+            <dt class="col-sm-3">Số lượng tồn</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Stock)</dd>
+
+            <dt class="col-sm-3">Mô tả</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+        </dl>
+    </div>
+    <div class="card-footer">
+        <a asp-action="Edit" asp-route-id="@Model.PetId" class="btn btn-primary">Sửa</a>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+    </div>
+</div>

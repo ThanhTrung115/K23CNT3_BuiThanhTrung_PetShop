@@ -1,0 +1,38 @@
+﻿@model PetShop.Models.Pet
+
+@{
+    ViewData["Title"] = "Xóa";
+}
+
+<h1 class="mt-4">@ViewData["Title"]</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Dashboard</a></li>
+    <li class="breadcrumb-item"><a asp-action="Index">Quản lý Thú cưng</a></li>
+    <li class="breadcrumb-item active">Xóa</li>
+</ol>
+
+<div class="alert alert-danger">
+    <h3>Bạn có chắc chắn muốn xóa mục này?</h3>
+    <p>Hành động này không thể được hoàn tác.</p>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Thông tin thú cưng sẽ bị xóa
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Tên thú cưng</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.PetName)</dd>
+
+            <dt class="col-sm-3">Danh mục</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Category.CategoryName)</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="PetId" />
+            <input type="submit" value="Xác nhận Xóa" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+﻿:root {
+    --admin-bg: #f4f7fc;
+    --sidebar-bg: #ffffff;
+    --sidebar-width: 260px;
+    --header-height: 70px;
+    --primary-accent: #435ebe;
+    --text-color: #25396f;
+    --text-muted: #6c757d;
+    --card-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+}
+
+body {
+    background-color: var(--admin-bg);
+    font-family: 'Nunito', sans-serif;
+}
+
+.admin-wrapper {
+    display: flex;
+}
+
+/* --- Sidebar Menu --- */
+.admin-sidebar {
+    width: var(--sidebar-width);
+    min-height: 100vh;
+    background: var(--sidebar-bg);
+    box-shadow: var(--card-shadow);
+    z-index: 100;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+}
+
+    .sidebar-header a {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--primary-accent);
+        text-decoration: none;
+    }
+
+.admin-sidebar-menu {
+    padding: 20px;
+}
+
+    .admin-sidebar-menu .menu-item {
+        margin-bottom: 10px;
+    }
+
+    .admin-sidebar-menu .menu-link {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-color);
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+        .admin-sidebar-menu .menu-link:hover {
+            background-color: #f0f1f5;
+        }
+
+        .admin-sidebar-menu .menu-link.active {
+            background-color: var(--primary-accent);
+            color: white;
+        }
+
+        .admin-sidebar-menu .menu-link i {
+            margin-right: 15px;
+            width: 20px;
+            text-align: center;
+        }
+
+/* --- Main Content --- */
+.admin-content {
+    width: calc(100% - var(--sidebar-width));
+    padding: 30px;
+}
+
+/* --- Thẻ thống kê Dashboard --- */
+.stat-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+    .stat-card .stat-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        color: white;
+        margin-right: 20px;
+    }
+
+    .stat-card .stat-info h5 {
+        font-size: 1rem;
+        color: var(--text-muted);
+        margin-bottom: 5px;
+    }
+
+    .stat-card .stat-info .stat-number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--text-color);
+    }

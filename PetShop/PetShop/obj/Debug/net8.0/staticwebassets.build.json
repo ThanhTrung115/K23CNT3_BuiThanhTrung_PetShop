@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PJ/52tNzJIVJc+CTh+Wwmfwg2g5DoSvMAceSEDNHens=",
+  "Hash": "ElJVkBfaWlYfpOADcMc6vAA5JZ42nQh2LEr4MU9APQw=",
   "Source": "PetShop",
   "BasePath": "_content/PetShop",
   "Mode": "Default",
@@ -59,12 +59,12 @@
       "OriginalItemSpec": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PetShop.bundle.scp.css"
     },
     {
-      "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\admin-custom.css",
+      "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\admin.css",
       "SourceId": "PetShop",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\",
       "BasePath": "_content/PetShop",
-      "RelativePath": "css/admin-custom#[.{fingerprint}]?.css",
+      "RelativePath": "css/admin#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -73,11 +73,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4clkc0kjba",
-      "Integrity": "/MpuwmHEOG+WmZby6tb3PzkAsR/y4w1Sn7UPVGDlj9g=",
+      "Fingerprint": "y2pxmd29es",
+      "Integrity": "xnhtRPelY+W+CBl7FdU5TR6L27lgeNgJdPPsjwvYL3E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\admin-custom.css"
+      "OriginalItemSpec": "wwwroot\\css\\admin.css"
     },
     {
       "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\site.css",
@@ -120,27 +120,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\js\\scripts.js",
-      "SourceId": "PetShop",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\",
-      "BasePath": "_content/PetShop",
-      "RelativePath": "js/scripts#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "m3lya2utec",
-      "Integrity": "UlFNVcoN1PVywAbJnMbvenodq9nNZ4v/Tu1CPNLJwlA=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
       "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\js\\site.js",
@@ -1363,8 +1342,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/admin-custom.4clkc0kjba.css",
-      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\admin-custom.css",
+      "Route": "css/admin.css",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\admin.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1373,7 +1352,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2316"
+          "Value": "2597"
         },
         {
           "Name": "Content-Type",
@@ -1381,56 +1360,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/MpuwmHEOG+WmZby6tb3PzkAsR/y4w1Sn7UPVGDlj9g=\""
+          "Value": "\"xnhtRPelY+W+CBl7FdU5TR6L27lgeNgJdPPsjwvYL3E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 10 Sep 2025 08:31:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4clkc0kjba"
-        },
-        {
-          "Name": "label",
-          "Value": "css/admin-custom.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/MpuwmHEOG+WmZby6tb3PzkAsR/y4w1Sn7UPVGDlj9g="
-        }
-      ]
-    },
-    {
-      "Route": "css/admin-custom.css",
-      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\admin-custom.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2316"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/MpuwmHEOG+WmZby6tb3PzkAsR/y4w1Sn7UPVGDlj9g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 10 Sep 2025 08:31:55 GMT"
+          "Value": "Wed, 10 Sep 2025 18:09:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1440,7 +1374,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/MpuwmHEOG+WmZby6tb3PzkAsR/y4w1Sn7UPVGDlj9g="
+          "Value": "sha256-xnhtRPelY+W+CBl7FdU5TR6L27lgeNgJdPPsjwvYL3E="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.y2pxmd29es.css",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xnhtRPelY+W+CBl7FdU5TR6L27lgeNgJdPPsjwvYL3E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 10 Sep 2025 18:09:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2pxmd29es"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xnhtRPelY+W+CBl7FdU5TR6L27lgeNgJdPPsjwvYL3E="
         }
       ]
     },
@@ -1605,88 +1584,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "js/scripts.js",
-      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\js\\scripts.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "346"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UlFNVcoN1PVywAbJnMbvenodq9nNZ4v/Tu1CPNLJwlA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 10 Sep 2025 08:22:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-UlFNVcoN1PVywAbJnMbvenodq9nNZ4v/Tu1CPNLJwlA="
-        }
-      ]
-    },
-    {
-      "Route": "js/scripts.m3lya2utec.js",
-      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\js\\scripts.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "346"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UlFNVcoN1PVywAbJnMbvenodq9nNZ4v/Tu1CPNLJwlA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 10 Sep 2025 08:22:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m3lya2utec"
-        },
-        {
-          "Name": "label",
-          "Value": "js/scripts.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UlFNVcoN1PVywAbJnMbvenodq9nNZ4v/Tu1CPNLJwlA="
         }
       ]
     },
