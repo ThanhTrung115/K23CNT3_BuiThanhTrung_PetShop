@@ -1,48 +1,83 @@
 ﻿@model PetShop.ViewModels.AdminDashboardViewModel
+
 @{
-    ViewData["Title"] = "Bảng điều khiển";
+    ViewData["Title"] = "Dashboard";
 }
 
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+</div>
+
 <div class="row">
-    <div class="col-lg-3 col-md-6">
-        <a asp-area="Admin" asp-controller="Pets" asp-action="Index" class="text-decoration-none">
-            <div class="stat-card">
-                <div class="stat-icon bg-primary"><i class="fas fa-paw"></i></div>
-                <div class="stat-card-info">
-                    <h5>Thú cưng</h5>
-                    <span class="stat-number">@Model.PetCount</span>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            Tổng Doanh Thu
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalRevenue.ToString("N0") VNĐ</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
                 </div>
             </div>
-        </a>
+        </div>
     </div>
-    <div class="col-lg-3 col-md-6">
-        <a asp-area="Admin" asp-controller="Orders" asp-action="Index" class="text-decoration-none">
-            <div class="stat-card">
-                <div class="stat-icon bg-warning"><i class="fas fa-file-invoice"></i></div>
-                <div class="stat-card-info">
-                    <h5>Đơn hàng</h5>
-                    <span class="stat-number">@Model.OrderCount</span>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Tổng số người dùng
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.UserCount</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-users fa-2x text-gray-300"></i>
+                    </div>
                 </div>
             </div>
-        </a>
+        </div>
     </div>
-    <div class="col-lg-3 col-md-6">
-        <a asp-area="Admin" asp-controller="Users" asp-action="Index" class="text-decoration-none">
-            <div class="stat-card">
-                <div class="stat-icon bg-success"><i class="fas fa-users"></i></div>
-                <div class="stat-card-info">
-                    <h5>Người dùng</h5>
-                    <span class="stat-number">@Model.UserCount</span>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Tổng số đơn hàng
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.OrderCount</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-file-invoice fa-2x text-gray-300"></i>
+                    </div>
                 </div>
             </div>
-        </a>
+        </div>
     </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="stat-card">
-            <div class="stat-icon bg-danger"><i class="fas fa-dollar-sign"></i></div>
-            <div class="stat-card-info">
-                <h5>Doanh thu</h5>
-                <span class="stat-number">@Model.TotalRevenue.ToString("N0")</span>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            Số lượng thú cưng
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.PetCount</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-paw fa-2x text-gray-300"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
