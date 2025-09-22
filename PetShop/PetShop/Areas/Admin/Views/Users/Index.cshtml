@@ -7,39 +7,53 @@
 <h1 class="mt-4">@ViewData["Title"]</h1>
 <ol class="breadcrumb mb-4">
     <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Dashboard</a></li>
-    <li class="breadcrumb-item active">Danh sách Người dùng</li>
+    <li class="breadcrumb-item active">Danh sách người dùng</li>
 </ol>
 
-<div class="card">
+<p>
+    <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus"></i> Thêm người dùng mới</a>
+</p>
+
+<div class="card shadow-sm mb-4">
     <div class="card-header">
-        <i class="fas fa-table me-1"></i>
-        Tất cả tài khoản
+        <i class="fas fa-users me-1"></i>
+        Tất cả người dùng
     </div>
     <div class="card-body">
-        <table class="table table-bordered table-hover">
-            <thead>
-                <tr>
-                    <th>Họ và tên</th>
-                    <th>Email</th>
-                    <th>Vai trò</th>
-                    <th>Ngày đăng ký</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
+        <div class="table-responsive">
+            <table class="table table-hover" id="datatablesSimple">
+                <thead>
                     <tr>
-                        <td>@item.FullName</td>
-                        <td>@item.Email</td>
-                        <td>@item.Role.RoleName</td>
-                        <td>@item.DateRegistered.ToString("dd/MM/yyyy")</td>
-                        <td>
-                            <a asp-action="Details" asp-route-id="@item.UserId" class="btn btn-info btn-sm">Xem chi tiết</a>
-                        </td>
+                        <th>Họ và Tên</th>
+                        <th>Email (Tên đăng nhập)</th>
+                        <th class="text-center">Vai trò</th>
+                        <th class="text-center">Hành động</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="align-middle text-dark">@item.FullName</td>
+                            <td class="align-middle text-dark">@item.Email</td>
+                            <td class="text-center align-middle">
+                                @{
+                                    var roleClass = "bg-secondary";
+                                    if (item.Role?.RoleName == "Admin") { roleClass = "bg-danger"; }
+                                    else if (item.Role?.RoleName == "Sales") { roleClass = "bg-success"; }
+                                    else { roleClass = "bg-info text-dark"; }
+                                }
+                                <span class="badge @roleClass">@item.Role?.RoleName</span>
+                            </td>
+                            <td class="text-center align-middle">
+                                <a asp-action="Details" asp-route-id="@item.UserId" class="btn btn-info btn-sm">Chi tiết</a>
+                                <a asp-action="Edit" asp-route-id="@item.UserId" class="btn btn-warning btn-sm">Sửa</a>
+                                <a asp-action="Delete" asp-route-id="@item.UserId" class="btn btn-danger btn-sm">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

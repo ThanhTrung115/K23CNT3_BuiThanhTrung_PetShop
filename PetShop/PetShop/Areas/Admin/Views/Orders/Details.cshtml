@@ -1,0 +1,94 @@
+﻿@model PetShop.Models.Order
+
+@{
+    ViewData["Title"] = "Chi tiết Đơn hàng #" + Model.OrderId;
+}
+
+<h1 class="mt-4">@ViewData["Title"]</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Dashboard</a></li>
+    <li class="breadcrumb-item"><a asp-action="Index">Quản lý Đơn hàng</a></li>
+    <li class="breadcrumb-item active">Chi tiết</li>
+</ol>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-info-circle me-1"></i>
+                Thông tin Đơn hàng
+            </div>
+            <div class="card-body">
+                <p><strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</p>
+                <p><strong>Tổng tiền:</strong> <span class="text-danger fw-bold">@Model.TotalAmount.ToString("N0") VNĐ</span></p>
+                <p><strong>Trạng thái:</strong> <span class="fw-bold">@Model.Status</span></p>
+                <hr />
+                <form asp-action="UpdateStatus" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="orderId" value="@Model.OrderId" />
+                    <div class="form-group mb-3">
+                        <label for="status" class="form-label fw-bold">Thay đổi trạng thái:</label>
+                        <select name="status" class="form-select">
+                            <option value="Đang xử lý" selected="@(Model.Status == "Đang xử lý")">Đang xử lý</option>
+                            <option value="Đã xác nhận" selected="@(Model.Status == "Đã xác nhận")">Đã xác nhận</option>
+                            <option value="Đang giao" selected="@(Model.Status == "Đang giao")">Đang giao</option>
+                            <option value="Hoàn thành" selected="@(Model.Status == "Hoàn thành")">Hoàn thành</option>
+                            <option value="Đã hủy" selected="@(Model.Status == "Đã hủy")">Đã hủy</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-user me-1"></i>
+                Thông tin Khách hàng
+            </div>
+            <div class="card-body">
+                <p><strong>Họ tên:</strong> @Model.User?.FullName</p>
+                <p><strong>Địa chỉ giao hàng:</strong> @Model.ShippingAddress</p>
+                <p><strong>Email:</strong> @Model.User?.Email</p>
+                <p><strong>Số điện thoại:</strong> @Model.User?.PhoneNumber</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-shopping-cart me-1"></i>
+                Danh sách sản phẩm
+            </div>
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th class="text-center">Số lượng</th>
+                            <th class="text-end">Đơn giá</th>
+                            <th class="text-end">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OrderDetails)
+                        {
+                            <tr>
+                                <td>@item.Pet.PetName</td>
+                                <td class="text-center">@item.Quantity</td>
+                                <td class="text-end">@item.Pet.Price.ToString("N0") VNĐ</td>
+                                <td class="text-end">@((item.Quantity * item.Pet.Price).ToString("N0")) VNĐ</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

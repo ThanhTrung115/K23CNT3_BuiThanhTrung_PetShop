@@ -1,0 +1,46 @@
+﻿@model PetShop.Models.User
+
+@{
+    ViewData["Title"] = "Chi tiết Người dùng";
+}
+
+<h1 class="mt-4">@ViewData["Title"]</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Dashboard</a></li>
+    <li class="breadcrumb-item"><a asp-action="Index">Quản lý Người dùng</a></li>
+    <li class="breadcrumb-item active">Chi tiết</li>
+</ol>
+
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h5 class="mb-0">Thông tin của: @Model.FullName</h5>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Email)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.FullName)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.FullName)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Address)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Address)</dd>
+
+            <dt class="col-sm-3">Vai trò</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Role.RoleName)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.IsActive)</dt>
+            <dd class="col-sm-9">@(Model.IsActive ? "Đang hoạt động" : "Đã khóa")</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.DateRegistered)</dt>
+            <dd class="col-sm-9">@Model.DateRegistered.ToString("dd/MM/yyyy HH:mm")</dd>
+        </dl>
+    </div>
+    <div class="card-footer">
+        <a asp-action="Edit" asp-route-id="@Model.UserId" class="btn btn-warning">Sửa</a>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>

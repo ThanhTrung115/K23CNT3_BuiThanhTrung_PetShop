@@ -10,36 +10,50 @@
     <li class="breadcrumb-item active">Danh sách Đơn hàng</li>
 </ol>
 
-<div class="card">
+<div class="card shadow-sm mb-4">
     <div class="card-header">
-        <i class="fas fa-table me-1"></i>
+        <i class="fas fa-file-invoice-dollar me-1"></i>
         Tất cả đơn hàng
     </div>
     <div class="card-body">
-        <table class="table table-bordered table-hover">
-            <thead class="table-light">
-                <tr>
-                    <th>Ngày đặt</th>
-                    <th>Khách hàng</th>
-                    <th>Tổng tiền</th>
-                    <th>Trạng thái</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
+        <div class="table-responsive">
+            <table class="table table-hover" id="datatablesSimple">
+                <thead>
                     <tr>
-                        <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
-                        <td>@item.User.FullName</td>
-                        <td class="text-danger fw-bold">@item.TotalAmount.ToString("N0") VNĐ</td>
-                        <td>@item.Status</td>
-                        <td>
-                            <a asp-action="Details" asp-route-id="@item.OrderId" class="btn btn-info btn-sm">Xem chi tiết</a>
-                        </td>
+                        <th>Mã Đơn</th>
+                        <th>Ngày đặt</th>
+                        <th>Khách hàng</th>
+                        <th class="text-end">Tổng tiền</th>
+                        <th class="text-center">Trạng thái</th>
+                        <th class="text-center">Hành động</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="align-middle text-dark">#@item.OrderId</td>
+                            <td class="align-middle text-dark">@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td class="align-middle text-dark">@item.User?.FullName</td>
+                            <td class="text-end fw-bold align-middle text-danger">@item.TotalAmount.ToString("N0") VNĐ</td>
+                            <td class="text-center align-middle">
+                                @{
+                                    var statusClass = "bg-secondary";
+                                    if (item.Status == "Hoàn thành") { statusClass = "bg-success"; }
+                                    else if (item.Status == "Đang giao") { statusClass = "bg-info text-dark"; }
+                                    else if (item.Status == "Đã xác nhận") { statusClass = "bg-primary"; }
+                                    else if (item.Status == "Đang xử lý") { statusClass = "bg-warning text-dark"; }
+                                    else if (item.Status == "Đã hủy") { statusClass = "bg-danger"; }
+                                }
+                                <span class="badge @statusClass">@item.Status</span>
+                            </td>
+                            <td class="text-center align-middle">
+                                <a asp-action="Details" asp-route-id="@item.OrderId" class="btn btn-info btn-sm">Xem chi tiết</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

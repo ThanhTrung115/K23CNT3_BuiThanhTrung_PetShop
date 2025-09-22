@@ -16,6 +16,7 @@ namespace PetShop.Areas.Admin.Controllers
             _context = context;
         }
 
+        // GET: Admin/Orders
         public async Task<IActionResult> Index()
         {
             var orders = await _context.Orders
@@ -25,6 +26,7 @@ namespace PetShop.Areas.Admin.Controllers
             return View(orders);
         }
 
+        // GET: Admin/Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,6 +46,25 @@ namespace PetShop.Areas.Admin.Controllers
             }
 
             return View(order);
+        }
+
+        // POST: Admin/Orders/UpdateStatus
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateStatus(int orderId, string status)
+        {
+            var order = await _context.Orders.FindAsync(orderId);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            order.Status = status;
+            _context.Update(order);
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Cập nhật trạng thái đơn hàng thành công!";
+            return RedirectToAction(nameof(Details), new { id = orderId });
         }
     }
 }
