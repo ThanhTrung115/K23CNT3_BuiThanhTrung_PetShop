@@ -2,6 +2,9 @@ wwwroot\css\admin.css
 wwwroot\css\admin.min.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\betta-halfmoon.jpg
+wwwroot\img\corgi.jpg
+wwwroot\img\meo-anh-long-ngan.jpg
 wwwroot\img\undraw_profile.svg
 wwwroot\js\admin-script.js
 wwwroot\js\admin-script.min.js

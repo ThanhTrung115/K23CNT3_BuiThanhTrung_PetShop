@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gHIZxyZhQrs/bIheN+2Kzt2wbt11nIQKtHTEzdorv8o=",
+  "Hash": "EFfYu4EZh5iJWo3jcKos426PzURML74RrMKhtMT9z+M=",
   "Source": "PetShop",
   "BasePath": "_content/PetShop",
   "Mode": "Default",
@@ -141,6 +141,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\betta-halfmoon.jpg",
+      "SourceId": "PetShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\",
+      "BasePath": "_content/PetShop",
+      "RelativePath": "img/betta-halfmoon#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "75cav2ocf5",
+      "Integrity": "+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\betta-halfmoon.jpg"
+    },
+    {
+      "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\corgi.jpg",
+      "SourceId": "PetShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\",
+      "BasePath": "_content/PetShop",
+      "RelativePath": "img/corgi#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vwskiyho3t",
+      "Integrity": "oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\corgi.jpg"
+    },
+    {
+      "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\meo-anh-long-ngan.jpg",
+      "SourceId": "PetShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\",
+      "BasePath": "_content/PetShop",
+      "RelativePath": "img/meo-anh-long-ngan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jvy9abowed",
+      "Integrity": "MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\meo-anh-long-ngan.jpg"
     },
     {
       "Identity": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\undraw_profile.svg",
@@ -39970,6 +40033,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "img/betta-halfmoon.75cav2ocf5.jpg",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\betta-halfmoon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:17:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "75cav2ocf5"
+        },
+        {
+          "Name": "label",
+          "Value": "img/betta-halfmoon.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU="
+        }
+      ]
+    },
+    {
+      "Route": "img/betta-halfmoon.jpg",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\betta-halfmoon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:17:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU="
+        }
+      ]
+    },
+    {
+      "Route": "img/corgi.jpg",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\corgi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI="
+        }
+      ]
+    },
+    {
+      "Route": "img/corgi.vwskiyho3t.jpg",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\corgi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vwskiyho3t"
+        },
+        {
+          "Name": "label",
+          "Value": "img/corgi.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI="
+        }
+      ]
+    },
+    {
+      "Route": "img/meo-anh-long-ngan.jpg",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\meo-anh-long-ngan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:18:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA="
+        }
+      ]
+    },
+    {
+      "Route": "img/meo-anh-long-ngan.jvy9abowed.jpg",
+      "AssetFile": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\meo-anh-long-ngan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:18:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jvy9abowed"
+        },
+        {
+          "Name": "label",
+          "Value": "img/meo-anh-long-ngan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA="
         }
       ]
     },

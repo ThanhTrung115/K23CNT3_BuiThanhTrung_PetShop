@@ -413,6 +413,252 @@
       ]
     },
     {
+      "Route": "img/betta-halfmoon.75cav2ocf5.jpg",
+      "AssetFile": "img/betta-halfmoon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:17:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "75cav2ocf5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU="
+        },
+        {
+          "Name": "label",
+          "Value": "img/betta-halfmoon.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/betta-halfmoon.jpg",
+      "AssetFile": "img/betta-halfmoon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:17:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+6IeeLXROxpVVq+t6rZ6MNGAkHzk+ufDBb8y3p5MNBU="
+        }
+      ]
+    },
+    {
+      "Route": "img/corgi.jpg",
+      "AssetFile": "img/corgi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:18:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI="
+        }
+      ]
+    },
+    {
+      "Route": "img/corgi.vwskiyho3t.jpg",
+      "AssetFile": "img/corgi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:18:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vwskiyho3t"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oQbNe8d3VymLbclmIgYFPvzz0IQd5N15g84SaJ7Y/YI="
+        },
+        {
+          "Name": "label",
+          "Value": "img/corgi.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/meo-anh-long-ngan.jpg",
+      "AssetFile": "img/meo-anh-long-ngan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:18:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA="
+        }
+      ]
+    },
+    {
+      "Route": "img/meo-anh-long-ngan.jvy9abowed.jpg",
+      "AssetFile": "img/meo-anh-long-ngan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102122"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Oct 2025 08:18:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jvy9abowed"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MREw1iLhwPS91pcxGizcaXLBTRajcSAyaNxEs0tZjKA="
+        },
+        {
+          "Name": "label",
+          "Value": "img/meo-anh-long-ngan.jpg"
+        }
+      ]
+    },
+    {
       "Route": "img/undraw_profile.svg",
       "AssetFile": "img/undraw_profile.svg",
       "Selectors": [],

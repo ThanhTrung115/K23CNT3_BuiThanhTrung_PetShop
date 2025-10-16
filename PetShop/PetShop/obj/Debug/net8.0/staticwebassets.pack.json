@@ -21,6 +21,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\betta-halfmoon.jpg",
+      "PackagePath": "staticwebassets\\img\\betta-halfmoon.jpg"
+    },
+    {
+      "Id": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\corgi.jpg",
+      "PackagePath": "staticwebassets\\img\\corgi.jpg"
+    },
+    {
+      "Id": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\meo-anh-long-ngan.jpg",
+      "PackagePath": "staticwebassets\\img\\meo-anh-long-ngan.jpg"
+    },
+    {
       "Id": "D:\\hoc tap\\K23CNT3_BuiThanhTrung_PetShop\\PetShop\\PetShop\\wwwroot\\img\\undraw_profile.svg",
       "PackagePath": "staticwebassets\\img\\undraw_profile.svg"
     },
